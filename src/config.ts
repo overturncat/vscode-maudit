@@ -20,7 +20,7 @@ export class CommonRegRule {
     description: string;
     constructor (rawRule : RawComRegRule) {
         this.type_name = rawRule.type_name;
-        this.regex = RegExp(rawRule.regex, 'g');
+        this.regex = RegExp(rawRule.regex, 'ig');
         this.description = rawRule.description;
     }
 }
